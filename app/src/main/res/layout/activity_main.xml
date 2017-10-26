@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.internalstoragedemo.MainActivity">
+
+    <EditText
+        android:id="@+id/et_message"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:hint="type your message here"/>
+
+    <Button
+        android:id="@+id/bt_savemessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Message"
+        android:onClick="saveMessage"
+        android:layout_below="@+id/et_message"
+        android:layout_marginLeft="40dp"/>
+
+    <Button
+        android:id="@+id/bt_displaymessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Display Message"
+        android:onClick="displayMessage"
+        android:layout_below="@id/et_message"
+        android:layout_toRightOf="@id/bt_savemessage"/>
+
+    <TextView
+        android:id="@+id/tv_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"
+        android:layout_below="@+id/bt_displaymessage"/>
+
+</RelativeLayout>
